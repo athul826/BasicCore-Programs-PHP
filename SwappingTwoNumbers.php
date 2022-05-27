@@ -2,15 +2,18 @@
 // program to swap two numbers.
 $temp;
 $a = readline("Enter first number a = ");
-$b = readline("Enter the Second Number b = ");
-// validating the numbers
-if ($a > 0 &&  $b > 0) {
-    $temp = $a;
-    $a = $b;
-    $b = $temp;
-    echo "a = $a\n";
-    echo "b = $b\n";
-    echo "The Two Numbers has been Swapped Successfuly!!\n";
+if ($a > 0) {
 } else {
-    echo "Enter a Valid Number";
+    echo "Enter a valid number!!";
 }
+$b = readline("\nEnter the Second Number b = ");
+if ($b > 0) {
+} else {
+    echo "Enter a valid number";
+}
+$temp = $a;
+$a = $b;
+$b = $temp;
+echo "a = $a\n";
+echo "b = $b\n";
+echo "The Two Numbers has been Swapped Successfuly!!\n";
